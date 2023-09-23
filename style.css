@@ -1,0 +1,224 @@
+@import url(./constants.css);
+
+
+.app {
+    padding: 0 1rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-heading {
+    color: var(--grey-heading);
+    font-size: var(--text-3xl);
+    margin-bottom: 1rem;
+}
+
+.orders-list {
+    background-color: var(--grey-6);
+    width: 100%;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 450px;
+}
+
+.order {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    overflow: hidden;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+.order-img-container {
+    width: 40%;
+
+}
+
+.order-img-container>img {
+    width: 100%;
+    border-radius: 10px;
+}
+.order-details {
+    width: 50%;
+}
+.product-name {
+    font-size: var(--text-base);
+    width: 100%;
+    display: inline-block;
+}
+
+.price-details {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    
+}
+
+.offering-price {
+    color: var(--orange);
+    font-size: var(--text-base);
+}
+
+.real-price {
+    font-size: var(--text-xs);
+    text-decoration: line-through;
+}
+
+.order-count-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 1.5rem;
+    border: 1px solid var(--grey-3);
+    border-radius: 20px;
+    padding: .5rem 1rem;
+}
+
+.order-count-btn {
+    cursor: pointer;
+    background-color: var(--grey-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .3rem;
+    padding-top: .3rem;
+    border: none;
+    
+}
+
+.order-count-btn:hover {
+    background-color: var(--grey-4)
+}
+
+.img-cont-button {
+    width: 1rem;
+}
+
+.img-cont-button>img {
+    width: 100%;
+}
+
+.total-price-div {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.shipping-price,
+.total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: solid var(--grey-3) 1.5px;
+
+}
+
+.total-price-div-text, .total-price-div-price {
+    font-size: var(--text-base);
+    color: var(--grey-1);
+}
+
+
+.contact-info-heading {
+    color: var(--grey-1);
+    font-size: var(--text-xl);
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+.total-flex{
+    display: flex;
+}
+
+label {
+    font-size: var(--text-xs);  
+}
+
+.input-container {
+    margin: .5rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: 1px var(--grey-3) solid;
+    border-radius: 10px;
+    padding: .3rem .5rem ;
+}
+
+.input-container>input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+}
+
+.form-section {
+    max-width: 450px;
+}
+
+.checkbox-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-text {
+    font-size: var(--text-xs);
+}
+
+.submit-btn {
+    float: right;
+    padding: .5rem 1rem;
+    background-color: var(--orange);
+    font-size: var(--text-base);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+    .app {
+        margin: 0rem 2rem;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: start;
+        gap: 4rem;
+        margin-top: 2rem;
+    }
+
+    .contact-info {
+        margin-top: 0;
+    }
+
+    .shipping-info {
+        margin-top: 2rem;
+    }
+
+    .form-section {
+        margin: 0;
+    }
+}

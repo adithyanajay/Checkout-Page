@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        
+
+        <div class="container">
+            <h1 class="app-heading">
+                Checkout
+            </h1>
+            <div class="orders-list">
+
+
+                <div class="order">
+                    <div class="order-img-container">
+                        <img src="./assets/photo1.png" alt="product-1">
+                    </div>
+                    <div class="order-details">
+                        <h2 class="product-name">
+                            Vintage Backbag
+                        </h2>
+
+                        <div class="price-details">
+                            <p class="offering-price" id="vintage-bag-price">$<span class="price offering-price">54.99</span></p>
+                            <p class="real-price">$94.99</p>
+                        </div>
+
+                        <div class="order-count-selector">
+                            <button class="minus-orders order-count-btn ">
+                                <div class="img-cont-button ">
+                                    <img src="./assets/minus.svg" alt="">
+                                </div>
+                            </button onclick="incresItems">
+                            <p class="amount">1</p>
+                            <button class="plus-orders order-count-btn" id="plus-orders">
+                                <div class="img-cont-button">
+                                    <img src="./assets/plus.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order">
+                    <div class="order-img-container">
+                        <img src="./assets/photo2.png" alt="product-2">
+                    </div>
+                    <div class="order-details">
+                        <h2 class="product-name">
+                            Levi Shoes
+                        </h2>
+
+                        <div class="price-details">
+                            <p class="offering-price">$<span class="price offering-price">74.99</span></p>
+                            <p class="real-price">$124.99</p>
+                        </div>
+
+                        <div class="order-count-selector">
+                            <button class="minus-orders order-count-btn">
+                                <div class="img-cont-button ">
+                                    <img src="./assets/minus.svg" alt="">
+                                </div>
+                            </button>
+                            <p class="amount">1</p>
+                            <button class="plus-orders order-count-btn">
+                                <div class="img-cont-button">
+                                    <img src="./assets/plus.svg" alt="">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="total-price-div ">
+                    <div class="shipping-price ">
+                        <h2 class="total-price-div-text">Shipping</h2>
+                        <p class="total-price-div-price">$19</p>
+                    </div>
+
+                    <div class="total">
+                        <h2 class="total-price-div-text">Total</h2>
+                        <div class="total-flex">
+                            <span>$</span>
+                        <p class="total-price-div-price" id="total">148.98</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <section class="form-section">
+
+        
+
+        <form id="form" >
+            <div class="contact-info">
+                <div class="contact-info-heading-div">
+                    <h2 class="contact-info-heading">Contact information</h2>
+                </div>
+
+                <label for="email">E-mail</label>
+                <div class="input-container">
+                    <img src="./assets/mail.svg" alt="">
+                    <input required type="email" name="email" placeholder="Enter your email...">
+                </div>
+                <label for="phone">Phone</label>
+                <div class="input-container">
+                    <img src="./assets/phone.svg" alt="">
+                    <input required type="tel" name="phone" placeholder="Enter your phone...">
+                </div>
+
+
+            </div>
+
+            <div class="contact-info shipping-info">
+                <div class="contact-info-heading-div">
+                    <h2 class="contact-info-heading">Shipping address</h2>
+                </div>
+
+                <label for="email">Name</label>
+                <div class="input-container">
+                    <img src="./assets/profile.svg" alt="">
+                    <input required type="name" name="name" placeholder="Enter your name...">
+                </div>
+                <label for="address">Address</label>
+                <div class="input-container">
+                    <img src="./assets/home.svg" alt="">
+                    <input required type="name" name="address" placeholder="Your address...">
+                </div>
+
+
+                <label for="city">City</label>
+                <div class="input-container">
+                    <img src="./assets/world.svg" alt="">
+                    <input required type="name" name="city" placeholder="Your city...">
+                </div>
+
+                <div class="flex">
+                    <div class="flex-content">
+                        <label for="country">Country</label>
+                        <div class="input-container">
+                            <img src="./assets/world.svg" alt="">
+                            <select name="country" id="country" required>
+                                <option hidden selected>Select one...</option>
+                                <option value="India">India</option>
+                                <option value="China">China</option>
+                                <option value="Canada">Canada</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-content">
+                        <label for="postalcode">Postal code</label>
+                        <div class="input-container">
+                            <img src="./assets/postal.svg" alt="">
+                            <input required type="name" name="postalcode" placeholder="Your postal code...">
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="checkbox-div">
+                    <input type="checkbox">
+                    <p class="checkbox-text">
+                        Save this information for the next time
+                    </p>
+                </div>
+
+                <input type="submit" value="Submit" class="submit-btn" id="submit">
+
+            </div>
+
+        </form>
+    </section>
+
+    </div>
+</body>
+<script src="./scripts.js"></script>
+
+
+</html>
