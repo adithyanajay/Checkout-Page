@@ -1,5 +1,3 @@
-
-
 document.getElementById("country").selectedIndex = 0;
 
 const minus_btns = document.querySelectorAll(".minus-orders");
